@@ -54,3 +54,4 @@ console.log(typeof stringNumber)
 // console.log(1 + 2 + "3");
 
 console.log(+true);
+console.log(+"");
