@@ -20,4 +20,7 @@ console.log(newString.trim());
 const url = "https://vishal.com/vishal%30sharma";
 
 console.log(url.replace('%30' ,'-'))
+console.log(url.includes('umang'));
+
+console.log(gameName.split(''));
 
