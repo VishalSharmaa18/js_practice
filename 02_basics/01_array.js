@@ -27,16 +27,16 @@
 const sportsName =  ["Cricket","Football","Volleyball","Hockey","Rugby"]
 // console.log(sportsName);
 
-// const newDefArr = sportsName.slice(0,2);
-// console.log("A : ",sportsName);
-// console.log(newDefArr);
-// console.log("B: ", sportsName);
-
-console.log("A : ",sportsName);
-const newDefArr = sportsName.splice(0,3);
-console.log("B : ",sportsName);
+ const newDefArr = sportsName.slice(0,2);
+ console.log("A : ",sportsName);
  console.log(newDefArr);
- console.log("c: ", sportsName);
+ console.log("B: ", sportsName);
+
+ const newDefArr2 = sportsName.splice(1,3);
+ console.log("c:" , newDefArr2);
+ console.log(sportsName);
+
+
 
 
 
