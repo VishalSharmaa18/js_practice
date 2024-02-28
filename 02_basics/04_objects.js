@@ -46,12 +46,32 @@ console.log(obj3);
 //       console.log(oldUser[0]);
 //       console.log(typeof oldUser);
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+const course = {
+    courseName : "JavaScript For Begginers",
+    CourseInstructor : "Vishal Sharma",
+    coursePrice : 999
+}
+
+    //       course.CourseInstructor
+
+  const {courseName : LanguageName} = course   //Destrucuring of object in js
+  //console.log(courseName);
+  console.log(LanguageName);
+
+
+//   {  //json
+//     "name" : "Vishal",
+//     "age" : 23,
+//     "email": "Vishal@google.com"   
+//   }
+  
 
 
 
