@@ -3,8 +3,9 @@ console.log(newUser);
 
 const tinderUser = {};
 
-// tinderUser.id = "vishal123";
-// tinderUser.email = "vishal@google.com";
+tinderUser.id = "vishal123";
+ tinderUser.email = "vishal@google.com";
+ tinderUser.isLoggedIn = "false";
 // console.log(tinderUser.email);
 
 const regularUser = {
@@ -28,4 +29,29 @@ console.log(Object.assign({} ,obj1,obj2));
 
 const obj3 = {...obj1,...obj2}
 console.log(obj3);
+
+// const oldUser =[
+//     {
+//         id: "abc123",
+//         email : "a@google.com"
+//     },
+//     {
+//         id: "xyz123",
+//         email : "x@google.com"
+//     },
+//     {
+
+//     }
+// ]
+//       console.log(oldUser[0]);
+//       console.log(typeof oldUser);
+
+console.log(tinderUser);
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+
 
