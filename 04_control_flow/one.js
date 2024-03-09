@@ -20,7 +20,7 @@ else{
 
 const balance = 1000;
 
- if(balance >500){
+ if(balance <500){
     console.log("Good");
  }
  else if(balance>750){
