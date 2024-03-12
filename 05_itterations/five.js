@@ -13,3 +13,8 @@ function printMe(list) {
 }
 
 sports.forEach(printMe)
+
+sports.forEach((element,index,arr)=>{
+    console.log(element,index,arr);
+}  
+)
