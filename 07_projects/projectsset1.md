@@ -32,5 +32,7 @@ buttons.forEach(function (button) {
     
   });
 });
+
+// 2nd Method by switch statement
   
  ``````
