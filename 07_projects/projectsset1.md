@@ -35,4 +35,33 @@ buttons.forEach(function (button) {
 
 // 2nd Method by switch statement
   
+  //2nd method by switch statement
+
+const buttons = document.querySelectorAll('.button');
+const body = document.querySelector('body');
+
+function changeColor(color) {
+  switch (color) {
+    case 'grey':
+      body.style.backgroundColor = 'grey';
+      break;
+    case 'white':
+      body.style.backgroundColor = 'white';
+      break;
+    case 'blue':
+      body.style.backgroundColor = 'red';
+      break;
+    case 'yellow':
+      body.style.backgroundColor = 'yellow';
+      break;
+    default:
+      console.log('invalid color');
+  }
+}
+
+buttons.forEach(function (button) {
+  button.addEventListener('click', function () {
+    changeColor(button.id);
+  });
+});
  ``````
