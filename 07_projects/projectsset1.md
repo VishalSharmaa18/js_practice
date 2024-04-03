@@ -64,4 +64,14 @@ buttons.forEach(function (button) {
     changeColor(button.id);
   });
 });
+
+//3rd method
+const allButtons = document.querySelectorAll(".button");
+const body = document.querySelector("body");
+
+allButtons.forEach(function(button){
+    button.addEventListener('mouseover', function(event){
+        body.style.backgroundColor = button.id;
+    })
+})
  ``````
