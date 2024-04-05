@@ -32,8 +32,6 @@ form.addEventListener('submit', function (e) {
   }
 });
 
-````````
-
 
 ```````
 ## project 3 solution code
