@@ -140,7 +140,7 @@ function newGame() {
     userInput.removeAttribute('disabled');
     startOver.removeChild(p);
 
-    playGame = false;
+    playGame = true;
   });
 }
 
