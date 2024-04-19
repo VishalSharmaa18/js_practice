@@ -184,7 +184,7 @@ document.querySelector('#stop').addEventListener('click', stopChangingColor);
 
 ```javascript
 
-const insert = document.getElementById('insert');
+const insert = document.getElementById("insert");
 
 window.addEventListener('keydown', (e) => {
   insert.innerHTML = `
