@@ -48,3 +48,36 @@ return user.username
 }).finally(()=>{
     console.log("the promise is either resolved or rejected")
 });
+
+const promiseFive = new Promise(function(resolve,reject){
+    setTimeout(() => {
+        const error = true;
+        if(!error){
+           resolve({username:"Javascript",password:"abc"})
+        }else{
+            reject('Error : JS went wrong')
+        }
+    }, 1000);
+})
+
+async function consumePromiseFive (){
+    try {
+        const response = await promiseFive;
+         console.log(response);
+    } catch (error) {
+        console.log(error)
+    }
+}
+consumePromiseFive();
+
+async function getUserInfo (){
+   try {
+    const data = await fetch('https://api.github.com/users/vishalsharma18')
+   const response = await data.json();
+   console.log(response);
+   } catch (error) {
+    console.log(error);
+   }
+}
+
+getUserInfo();
