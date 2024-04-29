@@ -82,15 +82,13 @@ async function getUserInfo (){
 
 getUserInfo();
 
-const enterNumber = new Promise(function(resolve,reject){
- const userNumber = window.prompt('Enter Number between 1-6');// Ask the user to enter a number
- const randomNumber = Math.floor(Math.random() *6+1);// Pick a random number between 1 and 6
 
- if(isNaN(userNumber)){
-    reject("Wrong Input type")
- }else{
-    if(userNumber===randomNumber){
-        resolve()
-    }
- }
+fetch('https://api.github.com/users/vishalsharma18')
+.then((response)=>{
+    return response.json()
+}).then((data)=>{
+    console.log(data)
+}).catch((error)=>{
+console.log(error);
 });
+// promise.all
