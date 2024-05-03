@@ -21,7 +21,7 @@ createUser.prototype.printme = function(){
 }
 
 const user1 = new createUser("Vishal",20);
-const user2 = createUser("Umang",250);
+const user2 = new createUser("Umang",250);
 
 user1.printme();
 
