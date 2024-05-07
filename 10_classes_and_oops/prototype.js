@@ -1,5 +1,5 @@
 let myName = "vishal   ";
 let myChannel = "driftwithvishal   ";
 
-console.log(myName.trueLength);
+console.log(myChannel.truelength);
 
