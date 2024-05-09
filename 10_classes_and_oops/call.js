@@ -10,4 +10,4 @@ function createUser(username,email,password){
 }
 
 const user = new createUser("Vishal","Vishal@home.com","123");
-console.log(user)
+console.log(user);
