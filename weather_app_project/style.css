@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background: #5555;
+    background: #282828
 }
 
 .card{
@@ -83,4 +83,14 @@ body{
 .humidity, .wind{
     font-size: 26px;
     margin-top: -6px;
+}
+.Weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
 }
